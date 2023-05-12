@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.welcome {
+    background-image: linear-gradient(#ff5722,#ffc107);
+    height: 101vh;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+     
+    
+.welcome h1 {
+    
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    font-size: 65px;
+    padding-top: 280px;
+}
+
+.welcome p {
+    font-size: 35px;
+    text-align: center;
+    color: bisque;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.fa-brands {
+    font-size:65px;
+    padding:20px;
+    color: black;
+}
+
+.fa-linkedin {
+    font-size: 65px;
+    padding: 15px;
+    color: rgb(25, 25, 128);
+}
+
+.fa-discord {
+    font-size: 65px;
+    padding: 15px;
+    color:blueviolet;
+    
+}
+
+ul li {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    opacity: 0;
+}
+
+.square li {
+    top: 0;
+    right: 20vw;
+    animation: square 8s linear infinite;
+}
+
+.square li:nth-child(2) {
+    right: 40vw;
+    animation-delay: 2s;
+}
+
+.square li:nth-child(3) {
+    right: 60vw;
+    animation-delay: 4s;
+    }
+
+.square li:nth-child(4) {
+    right: 70vw;
+    animation-delay: 6s;
+    }
+
+.square li:nth-child(5) {
+    right: 80vw;
+    animation-delay: 8s;     
+    }
+
+@keyframes square {
+    0% {
+        transform: scale (0) rotateY(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+        }
+
+    100% {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0.5;
+        top: 90vh;
+        border-radius: 50%;
+        }
+    }
+
+
+.circle li {
+    bottom: 0;
+    left: 15vw;
+    animation: circle 8s linear infinite;
+    }
+
+.circle li:nth-child(2) {
+    left: 35vw;
+    animation-delay: 2s;
+    }
+
+.circle li:nth-child(3) {
+    left: 55vw;
+    animation-delay: 4s;
+    }
+
+.circle li:nth-child(5) {
+    left: 90vw;
+    animation-delay: 8s;     
+    }
+
+
+@keyframes circle {
+    0% {
+        transform: scale (0) rotateY(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+        }
+
+    100% {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0.5;
+        bottom: 90vh;
+        border-radius: 50%;
+        }
+    }
+
+@media (max-width: 520px) {
+
+    .welcome h1 {
+        font-size: 35px;
+    }
+
+    .welcome p{
+        font-size: 20px;
+    }
+    
+    .fa-brands {
+        font-size:35px;
+    }   
+    
+    .fa-discord {
+        font-size: 35px;
+    }
+}
+
+@media (min-width:520px) {
+
+    .welcome h1 {
+        font-size: 50px;
+    }
+
+    .welcome p{
+        font-size: 25px;
+    }
+    
+    .fa-brands {
+        font-size:43px;
+    }   
+    
+    .fa-discord {
+        font-size: 43px;
+    }
+}
+
+@media (min-width:860px) {
+
+    .welcome h1 {
+        font-size: 65px;
+    }
+
+    .welcome p{
+        font-size: 35px;
+    }
+    
+    .fa-brands {
+        font-size:65px;
+    }   
+    
+    .fa-discord {
+        font-size: 65px;
+    }
+}
+
